@@ -6,8 +6,8 @@ export const QuickSortAnimation = (sortedArr = [], speed = 10, setTotalCountedSt
     if (!needToPlace) {
       let [theBar] = sortedArr[i];
       let selectTheBar = domBar[theBar];
-      // let color = i % 3 !== 0 ? 'red' : 'rgba(16, 185, 129, var(--tw-bg-opacity))';
-      let color = 'rgba(245, 158, 11, var(--tw-bg-opacity))';
+      // let color = i % 3 !== 0 ? 'red' : 'rgb(16, 185, 129)';
+      let color = 'rgb(245, 158, 11)';
       setTimeout(() => {
         selectTheBar.style.backgroundColor = color;
         setTotalCountedSteps((prevCount) => prevCount + 1);
@@ -25,7 +25,7 @@ export const QuickSortAnimation = (sortedArr = [], speed = 10, setTotalCountedSt
           let [theBar, theHeight] = sortedArr[i];
           let selectTheBar = domBar[theBar];
           selectTheBar.style.height = `${theHeight / 100}%`;
-          selectTheBar.style.backgroundColor = 'rgba(16, 185, 129, var(--tw-bg-opacity))';
+          selectTheBar.style.backgroundColor = 'rgb(16, 185, 129)';
         }
       }, i * speed);
       it++;
