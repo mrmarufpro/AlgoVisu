@@ -1,5 +1,4 @@
 import React from 'react';
-import { HelmetProvider } from 'react-helmet-async';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { SortingContextProvider } from 'Context/SortingContext';
 import BubbleSortContextProvider from 'Context/BubbleSortContext';
@@ -24,4 +23,3 @@ function Wrapper({ children }) {
 }
 
 export default Wrapper;
-lt Wrapper;
