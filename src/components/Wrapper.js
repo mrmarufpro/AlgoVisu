@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { SortingContextProvider } from 'Context/SortingContext';
 import BubbleSortContextProvider from 'Context/BubbleSortContext';

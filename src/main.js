@@ -4,7 +4,11 @@ import './index.css';
 import App from './App';
 import Wrapper from 'components/Wrapper';
 
-const root = createRoot(document.getElementById('root'));
+const container = document.getElementById('root');
+if (!container) {
+  throw new Error("Root container with id 'root' not found");
+}
+const root = createRoot(container);
 
 root.render(
   <React.StrictMode>
