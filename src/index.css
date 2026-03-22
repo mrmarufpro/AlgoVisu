@@ -4,39 +4,22 @@
 
 @layer components {
   .nav-links li a.active {
-    border-bottom: 1px solid #22c55e;
-    color: #22c55e;
+    @apply border-b border-green-500 text-green-500;
   }
 
   .btn {
-    align-items: center;
-    border-radius: 0.25rem;
-    cursor: pointer;
-    display: flex;
-    font-weight: 600;
-    height: 2.5rem;
-    justify-content: center;
-    outline: none;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    transition: all 150ms ease;
-  }
-  .btn-primary {
-    background-color: #16a34a;
-    color: #fff;
+    @apply h-10 flex justify-center items-center px-6 cursor-pointer transition-all font-semibold rounded outline-none focus:outline-none;
   }
 
-  .btn-primary:hover {
-    background-color: #22c55e;
+  .btn-primary {
+    @apply text-white bg-green-600 hover:bg-green-500;
   }
 
   .btn:disabled {
-    cursor: default;
-    opacity: 0.7;
+    @apply opacity-70 cursor-default;
   }
 
   .btn-light {
-    background-color: transparent;
-    color: inherit;
+    @apply bg-transparent text-inherit;
   }
 }
