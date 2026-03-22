@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 import ItemBars from 'components/Bars/ItemBars';
 import Button from 'components/Button';
 import { useSortingContext } from 'Context/SortingContext';

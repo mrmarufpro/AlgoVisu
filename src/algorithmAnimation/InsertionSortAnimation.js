@@ -6,7 +6,7 @@ export const InsertionSortAnimation = (sortedArr = [], speed = 10, setTotalCount
     if (!needToPlace) {
       let [theBar] = sortedArr[i];
       let selectTheBar = domBar[theBar];
-      // let color = i % 3 !== 0 ? 'red' : 'rgba(16, 185, 129, var(--tw-bg-opacity))';
+      // let color = i % 3 !== 0 ? 'red' : 'rgb(16, 185, 129)';
       let color = 'red';
       setTimeout(() => {
         selectTheBar.style.backgroundColor = color;
@@ -25,7 +25,7 @@ export const InsertionSortAnimation = (sortedArr = [], speed = 10, setTotalCount
           let [theBar, theHeight] = sortedArr[i];
           let selectTheBar = domBar[theBar];
           selectTheBar.style.height = `${theHeight / 100}%`;
-          selectTheBar.style.backgroundColor = 'rgba(16, 185, 129, var(--tw-bg-opacity))';
+          selectTheBar.style.backgroundColor = 'rgb(16, 185, 129)';
         }
       }, i * speed);
       it++;

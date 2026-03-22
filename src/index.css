@@ -1,13 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@config '../tailwind.config.js';
 
 @layer components {
-  /* .item-bar {
-    @apply transition duration-100 ease-in;
-  } */
   .nav-links li a.active {
     @apply border-b border-green-500 text-green-500;
   }
@@ -15,14 +10,16 @@
   .btn {
     @apply h-10 flex justify-center items-center px-6 cursor-pointer transition-all font-semibold rounded outline-none focus:outline-none;
   }
+
   .btn-primary {
     @apply text-white bg-green-600 hover:bg-green-500;
   }
+
   .btn:disabled {
     @apply opacity-70 cursor-default;
   }
+
   .btn-light {
-    color: inherit;
-    @apply bg-transparent;
+    @apply bg-transparent text-inherit;
   }
 }

@@ -1,16 +1,22 @@
 # About AlgoVisu
 
-This is a fun project to visualize the most common types of soring algorithm (Bubble, Insertion, Quick and Merge). At the time of learning this algorithm I have try to implement them using ReactJs (A javaScript library).
+AlgoVisu is a sorting visualizer for common algorithms: Bubble, Insertion, Quick, and Merge. It is built with React and now uses a Vite-based build setup.
 
 ## Installation
 
-This project is create by using `create-react-app`
-Follow this to run this project on your local environment:
+Follow this to run locally:
 
 - Clone this repo
-- Run `yarn` or `npm install`
-- Make sure you have install `Eslint` and `Prettier` VSCODE extension for better code format (Optional)
-- Run `yarn start` or `npm start`
+- Run `npm install` (or `yarn`)
+- Optional: install ESLint + Prettier VSCode extensions
+- Start dev server: `npm run dev` (or `yarn dev`)
+- Build for production: `npm run build`
+- Preview production build: `npm run preview`
+- Run tests: `npm test`
+
+## Requirements
+
+- Node.js `>=20.19.0`
 
 [Live Demo](https://algo-visu.vercel.app/)
 
