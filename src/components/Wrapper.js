@@ -14,9 +14,7 @@ function Wrapper({ children }) {
         <InsertionSortContextProvider>
           <QuickSortContextProvider>
             <MergeSortContextProvider>
-              <Router>
-                <HelmetProvider>{children}</HelmetProvider>
-              </Router>
+              <Router>{children}</Router>
             </MergeSortContextProvider>
           </QuickSortContextProvider>
         </InsertionSortContextProvider>
@@ -26,3 +24,4 @@ function Wrapper({ children }) {
 }
 
 export default Wrapper;
+lt Wrapper;
